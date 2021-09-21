@@ -5,6 +5,6 @@ const el = {
 console.log(el);
 function inputChange(event) {
     console.log(event.currentTarget.value);
-    el.outputEl.textContent = event.currentTarget.value;
+    (el.outputEl.textContent = event.currentTarget.value ||'незнакомец');
 }
 el.inputEl.addEventListener('input', inputChange);
